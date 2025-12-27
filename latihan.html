@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan Pertemuan 7</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Bricolage+Grotesque:wght@400;700&family=Dancing+Script:wght@400;700&family=Satisfy&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="latihan.css">
+</head>
+<body>
+  <header>
+    <h1>🍃The Fruity Garden</h1>
+    <nav class="nav-links" id="navLinks">
+      <a href="#Home">Home</a>
+      <div class="dropdown">
+       <button class="dropbtn" aria-expanded="false" aria-controls="about-menu">Juicy Moments</button>
+       <div class="dropdown-content" id="about-menu">
+        <a href="#video">Video</a>
+        </div>
+        </div>
+      <a href="#hobby">Fresh Gallery</a>
+      <a href="#last">Fruity</a>
+      <button id="themeToggle" class="theme-toggle" aria-label="Tombol Dark dan Light">🌙</button>
+        </nav>
+        <button class="burger" id="burgerBtn" aria-label="Tombol Menu Mobile">☰</button>
+  </header>
+
+  <a name="Home"></a>
+  <section class="hero">
+    <div class="hero-image">
+      <img src="https://admin.melindahospital.com/storage/images/articles/1707978794505.webp" alt="Ritsuki" class="popup-img">
+    </div>
+    <div class="hero-text">
+      <h2>Fresh Vibes, Naturally Sweet🍋‍🟩</h2>
+      <p>Dive into a world where colors bloom like fruits - bright, calm, and deliciously inspiring...</p>
+    </div>
+  </section>
+
+  <a name="video"></a>
+  <section class="video">
+    <h2>Juicy Moments🎥</h2>
+    <div class="videos">
+      <div class="video-wrapper" data-video="https://www.youtube.com/embed/UZPIZ8N5iV8?si=gfumLXEkhfPV2jia?autoplay=1">
+        <iframe src="https://www.youtube.com/embed/UZPIZ8N5iV8?si=gfumLXEkhfPV2jia" allowfullscreen></iframe>
+      </div>
+      <div class="video-wrapper" data-video="https://www.youtube.com/embed/6iiUi0QGdV0?si=VdoCMQaZu4MfBPrn?autoplay=1">
+        <iframe src="https://www.youtube.com/embed/6iiUi0QGdV0?si=VdoCMQaZu4MfBPrn" allowfullscreen></iframe>
+      </div>
+      <div class="video-wrapper" data-video="https://www.youtube.com/embed/GNoY5DzSyb0?si=gXPcxDhKwlWvxQOW?autoplay=1">
+        <iframe src="https://www.youtube.com/embed/GNoY5DzSyb0?si=gXPcxDhKwlWvxQOW"allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <a name="hobby"></a>
+  <div class="hobby">
+    <h2>🍓Fresh Gallery🍒</h2>
+  </div>
+
+  <section class="grid-gallery">
+    <div class="card">🥭 Mango Mornings</div>
+    <div class="card">🍉 Watermelon</div>
+    <div class="card">🍎 Apple</div>
+    <div class="card">🥝 Kiwi</div>
+    <div class="card">🍇 Grape</div>
+  </section>
+
+  <a name="last"></a>
+  <section class="last">
+    <div class="lasts">
+      <h2>Fruity - フルーツ</h2>
+      <p>May your days be as refreshing as dew on a morning leaf and as sweet as ripe fruit in the sun ... 🌸</p>
+    </div>
+    <img src="https://deorchids.com/wp-content/uploads/2023/05/100-Nama-Buah-Buahan.jpg.webp" alt="Ritsuki" class="popup-img">
+  </section>
+
+  <footer>
+    Copyright &copy; DWL3A - 🍃The Fruity Garden | Made With ❤
+  </footer>
+
+  <div id="modal-alert" class="modal-backdrop hidden">
+    <div class="modal-content">
+      <p>Welcome to 🍃The Fruity Garden</p>
+      <button id="tombol-tutup">Close</button>
+    </div>
+  </div>
+
+
+  <div id="image-modal" class="modal-backdrop hidden">
+    <img id="modal-image" src="">
+  </div>
+
+  <div id="video-modal" class="modal-backdrop hidden">
+    <iframe id="modal-video" frameborder="0" allowfullscreen></iframe>
+  </div>
+
+</body>
+<script src="script.js"></script>
+</html>
